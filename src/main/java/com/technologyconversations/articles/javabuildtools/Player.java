@@ -1,11 +1,13 @@
 package com.technologyconversations.articles.javabuildtools;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Player {
 
-    public static final List<String> POINTS_DESCRIPTION = Arrays.asList("love", "fifteen", "thirty", "forty");
+    private static String[] points = {"love", "fifteen", "thirty", "forty"};
+    public static final List<String> POINTS_DESCRIPTION = Collections.unmodifiableList(Arrays.asList(points));
 
     private int score;
     public final int getScore() {

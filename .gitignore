@@ -1,3 +1,5 @@
 /.gradle
 /.idea
 /TechnologyConversationsCD.iml
+/bin/
+/target/
